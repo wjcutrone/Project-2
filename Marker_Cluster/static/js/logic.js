@@ -27,13 +27,13 @@ d3.csv("static/data/new_data.csv", function(data) {
         //Establish Location
         var lat = data[i].Start_Lat;
         var lng = data[i].Start_Lng;
-        var location = [data[i].lat, data[i].lng];
+        var location = [lat,lng];
         
         //Check for the location property
         if (location) {
 
             //Add a new marker to cluster group and bind a popup
-            markers.addLayer(L.marker(location)
+            markers.addLayer(L.marker([location[0], location[1]])
             .bindPopup(data[i].Description));
         }
     }
