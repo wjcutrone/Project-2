@@ -1,0 +1,14 @@
+.navbar{
+	background: rgb(79, 77, 77) imp !important;
+}
+
+body{
+	background-color: white !important;
+}
+
+.hero{
+	padding: 20px;
+	height: 200px;
+	margin: 0;
+	background: rgb(13, 169, 216);
+}

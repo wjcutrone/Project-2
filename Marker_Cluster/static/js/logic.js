@@ -34,7 +34,10 @@ d3.csv("static/data/new_data.csv", function(data) {
 
             //Add a new marker to cluster group and bind a popup
             markers.addLayer(L.marker([location[0], location[1]])
-            .bindPopup(data[i].Description));
+            .bindPopup("<h3>Description: "+data[i].Description
+                        +"</h3><hr><h3> Severity: "+data[i].Severity
+                        +"</h3><hr><h3>Time: "+data[i].Start_Time+"</h3>"
+            ));
         }
     }
     
