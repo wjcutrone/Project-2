@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>US Accidents</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <link rel="stylesheet" href="static/css/style.css">
+    </head>
+    <body>
+        <nav class= "navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">US Traffic Accidents, 2019-2020</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collaspe navbar-collaspe justify-content-end" id="navbarNavDropdown">
+                    <ul class= "nav navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Visualizations
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="/marker-cluster">Marker Cluster</a></li>
+                                 <li><a class="dropdown-item" href="#">Cartogram</a></li>
+                                <li><a class="dropdown-item" href="/choropleth-time">Choropleth, Accident Time</a></li>
+                                <li><a class="dropdown-item" href="#">Choropleth 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/source-data">Data</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class= "hero text-center">
+            <h1>US Traffic Accidents</h1>
+            <h3>2019 to 2020</h3>
+        </div>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Marker Cluster Map</h3>
+                    <hr>
+                    <a href="/marker-cluster">
+                        <img src="static/images/markercluster.png" style="width: 50%;">
+                    </a>     
+                </div>
+                <div class="col-md-6">
+                    <h3>Cartogram</h3>
+                    <hr>
+                </div>    
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Choropleth, Accident Time</h3>
+                    <hr>
+                    <a href="/choropleth-time">
+                        <img src="static/images/choropleth_time.png" style="width: 50%;">
+                    </a>    
+                </div>
+                <div class="col-md-6">
+                    <h3>Choropleth 2</h3>
+                    <hr>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    </body>
+</html>
