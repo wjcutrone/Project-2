@@ -22,6 +22,10 @@ def source_data():
 def choropleth_severity():
     return render_template("choropleth_severity.html")
 
+@app.route("/temperature-boxplot")
+def temperature_boxplot():
+    return render_template("boxplot_temp.html")
+
 @app.route("/data")
 def get_csv():
     with open("./static/data/new_data.csv") as f:
