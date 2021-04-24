@@ -18,6 +18,10 @@ def choropleth_time():
 def source_data():
     return render_template("data.html")
 
+@app.route("/choropleth-severity")
+def choropleth_severity():
+    return render_template("choropleth_severity.html")
+
 @app.route("/data")
 def get_csv():
     with open("./static/data/new_data.csv") as f:
