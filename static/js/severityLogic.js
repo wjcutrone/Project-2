@@ -44,7 +44,7 @@ function drawMap(link){
         stateFeature[i].properties.accidents=data[currentState]
 
       }
-      console.log(statesData);
+      console.log(stateFeature);
       var geoJson= L.geoJson(statesData,{
         style: function(feature) {
           return {
