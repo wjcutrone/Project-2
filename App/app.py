@@ -33,6 +33,13 @@ def get_csv():
 
     return Response(csv, mimetype="text/csv")
 
+@app.route("/json")
+def get_json():
+    with open("./static/data/accidents_data.json") as f:
+        json = f.read()
+
+    return Response(json, mimetype="text/json")
+
 @app.route("/marker")
 def send_js():
     return app.send_static_file("marker.js")

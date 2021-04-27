@@ -15,7 +15,7 @@ L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
   }).addTo(myMap);
 
 //Read the csv
-d3.csv("/data", function(data) {
+d3.csv("/json", function(data) {
     console.log(data);
 
     //Create marker cluster group
