@@ -14,8 +14,8 @@ L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     accessToken: API_KEY
   }).addTo(myMap);
 
-//Read the csv
-d3.csv("/json", function(data) {
+//Read the json file
+d3.json("static/data/accidents_data.json", function(data) {
     console.log(data);
 
     //Create marker cluster group
