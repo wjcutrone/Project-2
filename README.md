@@ -1,4 +1,4 @@
-# Project-2
+# US Traffic Accidents, 2019 & 2020
 The aim of this repository was to create a webapp that would allow users to explore data on US Traffic Accidents from 2019 and 2020 to gain insights on trends asssociated with car accidents in the US. To achieve this, an interactive webapp was created that allows users to view multiple visualizations where they could learn meaningful information about US car accidents. In the webapp, there are 4 visualizations: a marker cluster map that shows where the most accidents happen, a boxplot with temperature during accidents by state, a choropleth that shows the most common times of days for accidents, and a choropleth that shows the number of accidents in each state that also allows users to compare the year 2020. After creating these visualizations, a flask app was used to initially host them locally. Following this, the flask app was then loaded into Heroku, where we were able to convert it into an app that exists on a server that anyone can view. The link to this app can be found below.
 
 https://us-accidents-19-20.herokuapp.com/
